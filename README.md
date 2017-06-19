@@ -7,12 +7,12 @@ A vaga é **para trabalho presencial no Viva Decora, localizado em São Paulo no
 
 ## Tabela de conteúdos
 
-* [Sobre o Viva Decora]()
-* [Sobre o projeto: Curadoria de filmes.]()
-* [Curadoria de filmes. Requisitos do MVP.]()
-* [Design do projeto]()
-* [Outros recursos]()
-* [Instruções para entrega do projeto]()
+* [Sobre o Viva Decora](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#sobre-o-viva-decora)
+* [Sobre o projeto: Curadoria de filmes.](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#sobre-o-projeto-curadoria-de-filmes)
+* [Curadoria de filmes. Requisitos do MVP.](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#curadoria-de-filmes-requisitos-do-mvp)
+* [Design do projeto](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#design-do-projeto)
+* [Outros recursos](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#outros-recursos)
+* [Instruções para entrega do projeto](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#warning-instruções-para-entrega-do-projeto)
 
 
 ## Sobre o Viva Decora:
