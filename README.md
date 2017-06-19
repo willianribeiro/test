@@ -21,7 +21,7 @@ O Viva Decora é uma empresa do grupo VivaReal, fundada em 2014, partiu  da nece
 
 O Viva Decora iniciou as atividades com o apoio da estrutura de back-office do VivaReal e depois ganhou equipes independentes de marketing B2B e B2C, operações, produto e engenharia, atualmente com 20 profissionais.  
 
-Nossa plataforma de arquitetura e decoração online é voltada para ajudar os usuários a criar e comprar móveis e objetos para ambientes, baseado em recomendações e inspirações de diferentes arquitetos e designers. Em nosso e em seu aplicativo temos mais de 1,5 milhão de visitas por mês e mais de 3 mil profissionais cadastrados. 
+Nossa plataforma de arquitetura e decoração online é voltada para ajudar os usuários a criar e comprar móveis e objetos para ambientes, baseado em recomendações e inspirações de diferentes arquitetos e designers. Temos mais de 1,5 milhão de visitas por mês  em nosso site e aplicativos e mais de 3 mil profissionais cadastrados. 
 
 O Viva Decora quer ajudar o consumidor em três fases distintas: inspiração, informação e compra.
  
@@ -76,13 +76,13 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 ### Tela "Filmes que gosto"
 
 * Apresenta todos os filmes que foram marcados como "Gosto desse filme".
-* A lista desses filmes é ordenada de acordado com a data em que o filme foi classificado, os classificados a menos tempo aparecem no topo.
+* A lista desses filmes é ordenada de acordo com a data em que o filme foi classificado, os classificados a menos tempo aparecem no topo.
 * Ao clicar no botão "Não gosto desse filme", deve aparecer uma mensagem: "Tem certeza que deseja reclassificar esse filme?". Só depois da confirmação o filme vai para "Meus filmes ruins".
 
 ### Tela "Filmes que não gosto"
 
 * Apresentam todos os filmes que foram marcados como "Não gosto desse filme".
-* A lista desses filmes é ordenada de acordado com a data em que o filme foi classificado, os classificados a menos tempo aparecem no topo.
+* A lista desses filmes é ordenada de acordo com a data em que o filme foi classificado, os classificados a menos tempo aparecem no topo.
 * Ao clicar no botão "Gosto desse filme", deve aparecer uma mensagem: "Tem certeza que deseja reclassificar esse filme?". Só depois da confirmação o filme vai para "Meus filmes bons".
 
 ## Design do projeto
