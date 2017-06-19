@@ -47,14 +47,14 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 * Será usada a [API versão 4 de filmes do The Movies Database](https://developers.themoviedb.org/4)
 * Pré-processadores css podem ser usados à vontade.
 * O projeto deve ser uma *single page application (SPA)* escrita utilizando Angular 1.x, por exemplo, Angular 1.5.8 .
-* O projeto consiste apenas em 3 telas: **Tela inicial**, **Meus filmes bons**, **Meus filmes ruins**.
+* O projeto consiste apenas em 3 telas: **Tela inicial**, **Filmes que gosto**, **Filmes que não gosto**.
 * Cada tela precisa ter uma url própria;
 * Não devem ser listados filmes classificados como `adulto`; 
 * HTML semântico é importante. Pretende-se que o projeto seja rastreável por motores de busca;
 * As telas devem ser responsivas e mobile first;
 * Não é preciso se preocupar com contas de usuário. O MVP funcionará apenas para o usuário logado.
-* Não é preciso se preocupar com persistência dos dados. É esperado que os dados sobre "Filmes bons ou ruins" seja perdido com o recarregamento da página, **mas não na troca de abas do projeto**. 
-* Repetindo: ao trocar entre abas do projeto os dados sobre "filmes bons ou ruins" devem permanecer. Não é necessário que eles persistam depois de um recarregamento.
+* Não é preciso se preocupar com persistência dos dados. É esperado que os dados sobre "Filmes que gosto / filmes que no gosto" seja perdido com o recarregamento da página, **mas não na troca de abas do projeto**. 
+* Repetindo: ao trocar entre abas do projeto os dados sobre "filmes que gosto/filmes que não gosto" devem permanecer. Não é necessário que eles persistam depois de um recarregamento.
 * Não precisa se preocupar com contas de usuário. **O MVP não possui dados de usuário**.
 
 ### Tela inicial
