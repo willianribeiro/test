@@ -91,7 +91,7 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 
 ## Outros recursos
 
-* O desenvolvedor @teles começou parte do projeto nesse repositório e se quiser você pode continuar seu projeto a partir desse código. 
+* O desenvolvedor [@teles](https://github.com/teles) começou parte do projeto nesse repositório e se quiser você pode continuar seu projeto a partir desse código. 
 * Se quiser pode usar o [vd-modal](https://github.com/vivadecora/vd-modal).
 
 **IMPORTANTE**: Usar qualquer desses recursos não é imprescindível e não vale pontos extras.
