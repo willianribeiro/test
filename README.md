@@ -5,6 +5,11 @@ A vaga é **para trabalho presencial no Viva Decora, localizado em São Paulo no
 
 **IMPORTANTE:** Nesse exato momento o projeto ainda não está terminado. Estamos aguardando [design](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/issues/3) e [trecho de código](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/issues/4) para que ele comece a valer. 
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/master/screenshots-readme/screenshot-desktop-inicial.png?raw=true">
+</p>
+
+
 ## Tabela de conteúdos
 
 * [Sobre o Viva Decora](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#sobre-o-viva-decora)
@@ -44,6 +49,8 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 
 ## Curadoria de filmes. Requisitos do MVP.
 
+ <img align="left" height="440" src="https://raw.githubusercontent.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/master/screenshots-readme/screenshot-mobile.png?raw=true">
+
 * Apenas código front-end será escrito para esse projeto: html5, css e javascript.
 * Será usada a [API versão 4 de filmes do The Movies Database](https://developers.themoviedb.org/4)
 * Pré-processadores css podem ser usados à vontade.
@@ -54,6 +61,7 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 * Não é preciso se preocupar com persistência dos dados. É esperado que os dados sobre "Filmes curtidos / filmes não curtidos" seja perdido com o recarregamento da página, **mas não na troca de abas do projeto**. 
 * Repetindo: ao trocar entre abas do projeto os dados sobre "filmes curtidos/filmes não curtidos" devem permanecer. Não é necessário que eles persistam depois de um recarregamento.
 * Não precisa se preocupar com contas de usuário. **O MVP não possui dados de usuário**.
+
 
 ### Tela "Filmes não curados"
 
@@ -90,6 +98,8 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 * No MVP não é possível curtir um filme depois que ele estiver nessa lista.
 
 ## Design do projeto
+<p align="center">
+<img src="https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/blob/master/screenshots-readme/screenshot-desktop-modal.png?raw=true"></p>
 
 As telas do filmes estão no Marvel. Você pode verifica-las nos seguintes links:
 
