@@ -59,6 +59,9 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 
 * É a tela inicial;
 * Exibe um card de filme de uma lista de filmes;
+* Um botão "Não curti!" que adiciona o filme na lista de "Filmes não curtidos";
+* Um botão "Pular" que remove o filme da lista de filmes não curados;
+* Um botão "Curti" que adiciona o filme na lista de "Filmes curtidos.";
 * Essa lista vem da API do [The Movie Database](https://developers.themoviedb.org);
 * A lista de filmes contém apenas filmes que ainda não foram curados.
 
@@ -88,7 +91,20 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 
 ## Design do projeto
 
-[Aguardando finalização das telas](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/issues/3).
+As telas do filmes estão no Marvel. Você pode verifica-las nos seguintes links:
+
+* [Mobile - Filmes não curados](https://marvelapp.com/255gaff/screen/29558499)
+* [Mobile - Modal de sinopse](https://marvelapp.com/255gaff/screen/29558496)
+* [Mobile - Menu aberto](https://marvelapp.com/255gaff/screen/29558498)
+* [Mobile - Filmes curtidos](https://marvelapp.com/255gaff/screen/29558497)
+* [Mobile - Filmes não curtidos](https://marvelapp.com/255gaff/screen/29558501)
+
+* [Desktop - Filmes não curados](https://marvelapp.com/4abc9c6/screen/29557679)
+* [Desktop - Filmes curtidos. Estado vazio](https://marvelapp.com/4abc9c6/screen/29557683)
+* [Desktop - Filmes não curtidos. Estado vazio](https://marvelapp.com/4abc9c6/screen/29557685)
+* [Desktop - Filmes curtidos](https://marvelapp.com/4abc9c6/screen/29557681)
+* [Desktop - Filmes não curtidos](https://marvelapp.com/4abc9c6/screen/29557684)
+* [Desktop - Modal de sinopse](https://marvelapp.com/4abc9c6/screen/29557680)
 
 ## Outros recursos
 
@@ -99,11 +115,11 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 
 ## Critérios de avaliação
 
-* Fidelidade ao layout solicitado.
-* Fidelidade às funcionalidades solicitadas.
-* Componentização e extensibilidade dos componentes Javascript.
-* Clareza de nomenclatura do CSS.
-* Semântica html.
+* Fidelidade ao layout solicitado;
+* Fidelidade às funcionalidades solicitadas;
+* Componentização e extensibilidade dos componentes Javascript;
+* Clareza de nomenclatura do CSS;
+* HTML estruturado de forma semântica;
 * Adesão ao mobile first.
 
 ## Pontos extras
@@ -111,6 +127,7 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 * Por desenvolvimento de testes unitários no Javascript;
 * Por uso de mock de chamadas Ajax nos testes unitários;
 * Por padronização do código: seguir algum styleguide de Javascript e/ou CSS;
+* Por aplicar alguma forma de dados estruturado ao HTML;
 * Pela aplicação das animações de transição.
 
 ## :warning: Instruções para entrega do projeto 
