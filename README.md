@@ -80,9 +80,7 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 * Foto de destaque;
 * Ano do filme;
 * Categoria do filme;
-* Botão "Gosto desse filme";
 * Classificação/*rating* do filme;
-* Botão "Não gosto desse filme";
 * Trecho da sinopse clicável com até 100 caracteres seguidos de  "...";
 * Ao clicar no trecho da sinopse a sinopse completa deverá aparecer em um modal bloqueante;
 
