@@ -1,9 +1,8 @@
 # Projeto vaga Front-end no Viva Decora
 
 Esse é um repositório com as regras para criação do projeto para vaga de desenvolvedor front-end no Viva Decora. 
-A vaga é **para trabalho presencial no Viva Decora, localizado em São Paulo no bairro da Consolação.**
 
-**IMPORTANTE:** Nesse exato momento o projeto ainda não está terminado. Estamos aguardando [design](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/issues/3) e [trecho de código](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/issues/4) para que ele comece a valer. 
+A vaga está aberta e é **para trabalho presencial no Viva Decora, localizado em São Paulo no bairro da Consolação.**
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/master/screenshots-readme/screenshot-desktop-inicial.png?raw=true">
@@ -118,8 +117,7 @@ As telas do filmes estão no Marvel. Você pode verifica-las nos seguintes links
 
 ## Outros recursos
 
-* O desenvolvedor [@teles](https://github.com/teles) começou parte do projeto nesse repositório e se quiser você pode continuar seu projeto a partir desse código. 
-* Se quiser pode usar o [vd-modal](https://github.com/vivadecora/vd-modal).
+* O desenvolvedor [@teles](https://github.com/teles) [começou parte do projeto nesse repositório e se quiser você pode continuar seu projeto a partir desse código](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/tree/master/curadoria). 
 
 **IMPORTANTE**: Usar qualquer desses recursos não é imprescindível e não vale pontos extras.
 
