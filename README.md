@@ -4,12 +4,8 @@ Esse é um repositório com as regras para criação do projeto para vaga de des
 
 A vaga está aberta e é **para trabalho presencial no Viva Decora, localizado em São Paulo no bairro da Consolação.**
 
-
-> &gt; [Compartilhe essa vaga no facebook.](https://www.facebook.com/sharer/sharer.php?u=https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork)
-
-> &gt; [Compartilhe essa vaga no linkedin.](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork&title=Vaga%20Desenvolvedor%20Front%20End%20Viva%20Decora)
-
 <p align="center">
+
 <img src="https://raw.githubusercontent.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/master/screenshots-readme/screenshot-desktop-inicial.png?raw=true">
 </p>
 
@@ -165,3 +161,9 @@ As telas do filmes estão no Marvel. Você pode verifica-las nos seguintes links
 * Crie um README com instruções claras sobre como executar seu projeto.
 * Envie um email com o link para seu código para "jose.maciel [arroba] vivadecora.com.br "
 * Dúvidas sobre esse projeto podem ser perguntadas nas [issues](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/issues)
+
+
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork"><img src="https://placeholdit.imgix.net/~text?txtsize=20&txtclr=fff&bg=3b5998&txt=Compartilhar+no+Facebook&w=250&h=60"></a>
+
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork&title=Vaga%20Desenvolvedor%20Front%20End%20Viva%20Decora"><img src="https://placeholdit.imgix.net/~text?txtsize=20&txtclr=fff&bg=0077b5&txt=Compartilhar+no+Linkedin&w=250&h=60"></a>
+
