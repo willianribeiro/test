@@ -1,5 +1,9 @@
 # Projeto vaga Front-end no Viva Decora
 
+<a align="left" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork"><img src="https://placeholdit.imgix.net/~text?txtsize=20&txtclr=fff&bg=3b5998&txt=Compartilhar+no+Facebook&w=250&h=60" align="left"></a>
+
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork&title=Vaga%20Desenvolvedor%20Front%20End%20Viva%20Decora"><img src="https://placeholdit.imgix.net/~text?txtsize=20&txtclr=fff&bg=0077b5&txt=Compartilhar+no+Linkedin&w=250&h=60"></a>
+
 Esse é um repositório com as regras para criação do projeto para vaga de desenvolvedor front-end no Viva Decora. 
 
 A vaga está aberta e é **para trabalho presencial no Viva Decora, localizado em São Paulo no bairro da Consolação.**
@@ -8,7 +12,6 @@ A vaga está aberta e é **para trabalho presencial no Viva Decora, localizado e
 
 <img src="https://raw.githubusercontent.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/master/screenshots-readme/screenshot-desktop-inicial.png?raw=true">
 </p>
-
 
 ## Tabela de conteúdos
 
@@ -21,7 +24,6 @@ A vaga está aberta e é **para trabalho presencial no Viva Decora, localizado e
 * [Pontos extras](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#pontos-extras)
 * [Instruções para entrega do projeto](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#warning-instruções-para-entrega-do-projeto)
 
-
 ## Sobre o Viva Decora:
 
 O Viva Decora é uma empresa do grupo VivaReal, fundada em 2014, partiu  da necessidade de completar o ciclo do consumidor de móveis online.  
@@ -30,8 +32,7 @@ O Viva Decora iniciou as atividades com o apoio da estrutura de back-office do V
 
 Nossa plataforma de arquitetura e decoração online é voltada para ajudar os usuários a criar e comprar móveis e objetos para ambientes, baseado em recomendações e inspirações de diferentes arquitetos e designers. Temos mais de 1,5 milhão de visitas por mês  em nosso site e aplicativos e mais de 3 mil profissionais cadastrados. 
 
-O Viva Decora quer ajudar o consumidor em três fases distintas: inspiração, informação e compra.
- 
+O Viva Decora quer ajudar o consumidor em três fases distintas: inspiração, informação e compra. 
 
 ## Sobre o projeto: Curadoria de filmes.
 
@@ -161,9 +162,3 @@ As telas do filmes estão no Marvel. Você pode verifica-las nos seguintes links
 * Crie um README com instruções claras sobre como executar seu projeto.
 * Envie um email com o link para seu código para "jose.maciel [arroba] vivadecora.com.br "
 * Dúvidas sobre esse projeto podem ser perguntadas nas [issues](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/issues)
-
-
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork"><img src="https://placeholdit.imgix.net/~text?txtsize=20&txtclr=fff&bg=3b5998&txt=Compartilhar+no+Facebook&w=250&h=60"></a>
-
-<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork&title=Vaga%20Desenvolvedor%20Front%20End%20Viva%20Decora"><img src="https://placeholdit.imgix.net/~text?txtsize=20&txtclr=fff&bg=0077b5&txt=Compartilhar+no+Linkedin&w=250&h=60"></a>
-
