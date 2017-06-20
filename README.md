@@ -12,6 +12,8 @@ A vaga é **para trabalho presencial no Viva Decora, localizado em São Paulo no
 * [Curadoria de filmes. Requisitos do MVP.](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#curadoria-de-filmes-requisitos-do-mvp)
 * [Design do projeto](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#design-do-projeto)
 * [Outros recursos](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#outros-recursos)
+* [Critérios de avaliação](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#critérios-de-avaliação)
+* [Pontos extras](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#pontos-extras)
 * [Instruções para entrega do projeto](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#warning-instruções-para-entrega-do-projeto)
 
 
@@ -28,7 +30,7 @@ O Viva Decora quer ajudar o consumidor em três fases distintas: inspiração, i
 
 ## Sobre o projeto: Curadoria de filmes.
 
-Depois do trabalho alguns amigos quiseram assistir filme juntos. O problema apareceu logo: *"Que filme vamos assistir?"*. Cada um parecia ter seu próprio gosto para filmes e estava difícil decidir.
+Depois do trabalho alguns amigos quiseram assistir um filme juntos. O problema apareceu logo: *"Que filme vamos assistir?"*. Cada um parecia ter seu próprio gosto para filmes e estava difícil decidir.
 
 Para resolver isso, Vanessa deu a ideia: 
 
@@ -38,7 +40,6 @@ O Bruno respondeu:
 
 > *Acho que vale a pena. Deveríamos fazer um MVP desse app só com funcionalidades básicas e ver se nos ajuda.*
 
-
 Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filmes" foram definidos como no próximo tópico. 
 
 ## Curadoria de filmes. Requisitos do MVP.
@@ -47,43 +48,43 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 * Será usada a [API versão 4 de filmes do The Movies Database](https://developers.themoviedb.org/4)
 * Pré-processadores css podem ser usados à vontade.
 * O projeto deve ser uma *single page application (SPA)* escrita utilizando Angular 1.x, por exemplo, Angular 1.5.8 .
-* O projeto consiste apenas em 3 telas: **Tela inicial**, **Filmes que gosto**, **Filmes que não gosto**.
+* O projeto consiste apenas em 3 telas: **Tela inicial**, **Filmes curtidos**, **Filmes não curtidos**.
 * Cada tela precisa ter uma url própria;
-* Não devem ser listados filmes classificados como `adulto`; 
-* HTML semântico é importante. Pretende-se que o projeto seja rastreável por motores de busca;
-* As telas devem ser responsivas e mobile first;
-* Não é preciso se preocupar com contas de usuário. O MVP funcionará apenas para o usuário logado.
-* Não é preciso se preocupar com persistência dos dados. É esperado que os dados sobre "Filmes que gosto / filmes que no gosto" seja perdido com o recarregamento da página, **mas não na troca de abas do projeto**. 
-* Repetindo: ao trocar entre abas do projeto os dados sobre "filmes que gosto/filmes que não gosto" devem permanecer. Não é necessário que eles persistam depois de um recarregamento.
+* As telas devem ser responsivas;
+* Não é preciso se preocupar com persistência dos dados. É esperado que os dados sobre "Filmes curtidos / filmes não curtidos" seja perdido com o recarregamento da página, **mas não na troca de abas do projeto**. 
+* Repetindo: ao trocar entre abas do projeto os dados sobre "filmes curtidos/filmes não curtidos" devem permanecer. Não é necessário que eles persistam depois de um recarregamento.
 * Não precisa se preocupar com contas de usuário. **O MVP não possui dados de usuário**.
 
-### Tela inicial
+### Tela "Filmes não curados"
 
-* Contém uma lista de cards de filmes;
+* É a tela inicial;
+* Exibe um card de filme de uma lista de filmes;
 * Essa lista vem da API do [The Movie Database](https://developers.themoviedb.org);
-* A lista de filmes contém apenas filmes que ainda não foram classificados.
+* A lista de filmes contém apenas filmes que ainda não foram curados.
 
 ### Informações do card de filme
 
 * Título do filme; 
 * Foto de destaque;
+* Ano do filme;
+* Categoria do filme;
 * Botão "Gosto desse filme";
 * Classificação/*rating* do filme;
 * Botão "Não gosto desse filme";
 * Trecho da sinopse clicável com até 100 caracteres seguidos de  "...";
 * Ao clicar no trecho da sinopse a sinopse completa deverá aparecer em um modal bloqueante;
 
-### Tela "Filmes que gosto"
+### Tela "Filmes curtidos"
 
-* Apresenta todos os filmes que foram marcados como "Gosto desse filme".
-* A lista desses filmes é ordenada de acordo com a data em que o filme foi classificado, os classificados a menos tempo aparecem no topo.
-* Ao clicar no botão "Não gosto desse filme", deve aparecer uma mensagem: "Tem certeza que deseja reclassificar esse filme?". Só depois da confirmação o filme vai para "Meus filmes ruins".
+* Apresenta todos os filmes que foram marcados como "Filmes curtidos".
+* A lista desses filmes é ordenada de acordo com a data em que o filme foi curado, os curados a menos tempo aparecem no topo.
+* No MVP não é possível descurtir um filme depois que ele estiver nessa lista.
 
-### Tela "Filmes que não gosto"
+### Tela "Filmes não curtidos"
 
-* Apresentam todos os filmes que foram marcados como "Não gosto desse filme".
-* A lista desses filmes é ordenada de acordo com a data em que o filme foi classificado, os classificados a menos tempo aparecem no topo.
-* Ao clicar no botão "Gosto desse filme", deve aparecer uma mensagem: "Tem certeza que deseja reclassificar esse filme?". Só depois da confirmação o filme vai para "Meus filmes bons".
+* Apresentam todos os filmes que foram marcados como "Filmes não curtidos".
+* A lista desses filmes é ordenada de acordo com a data em que o filme foi curado, os curados a menos tempo aparecem no topo.
+* No MVP não é possível curtir um filme depois que ele estiver nessa lista.
 
 ## Design do projeto
 
@@ -95,6 +96,22 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 * Se quiser pode usar o [vd-modal](https://github.com/vivadecora/vd-modal).
 
 **IMPORTANTE**: Usar qualquer desses recursos não é imprescindível e não vale pontos extras.
+
+## Critérios de avaliação
+
+* Fidelidade ao layout solicitado.
+* Fidelidade às funcionalidades solicitadas.
+* Componentização e extensibilidade dos componentes Javascript.
+* Clareza de nomenclatura do CSS.
+* Semântica html.
+* Adesão ao mobile first.
+
+## Pontos extras
+
+* Por desenvolvimento de testes unitários no Javascript;
+* Por uso de mock de chamadas Ajax nos testes unitários;
+* Por padronização do código: seguir algum styleguide de Javascript e/ou CSS;
+* Pela aplicação das animações de transição.
 
 ## :warning: Instruções para entrega do projeto 
 
