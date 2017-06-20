@@ -115,6 +115,20 @@ As telas do filmes estão no Marvel. Você pode verifica-las nos seguintes links
 * [Desktop - Filmes não curtidos](https://marvelapp.com/4abc9c6/screen/29557684)
 * [Desktop - Modal de sinopse](https://marvelapp.com/4abc9c6/screen/29557680)
 
+### Especificações de design
+
+* Cores/opacidade do degradê vermelho do fundo: De #ff1c1c ao #ff5656 60% alfa;
+* Tamanho da foto principal no mobile: 294 x 350;
+* Tamanho da foto principal no desktop: 700 x 460;
+* Tamanho da foto do card de lista no mobile: 145 x 174;
+* Breakpoint phone - até 320px de largura;
+* Breakpoint desktop - a partir de 321px de largura;
+* Tamanho da foto do card de lista no desktop: 294 x 350.
+
+### Assets
+
+[Confira aqui no repositório os assets desse projeto](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/tree/master/assets)
+
 ## Outros recursos
 
 * O desenvolvedor [@teles](https://github.com/teles) [começou parte do projeto nesse repositório e se quiser você pode continuar seu projeto a partir desse código](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/tree/master/curadoria). 
