@@ -122,7 +122,7 @@ As telas do filmes estão no Marvel. Você pode verifica-las nos seguintes links
 
 ### Especificações de design
 
-* Cores/opacidade do degradê vermelho do fundo: De #ff1c1c ao #ff5656 60% alfa;
+* Cores/opacidade do degradê vermelho do fundo: De ![#ff1c1c](https://placehold.it/15/ff1c1c/000000?text=+) `#ff1c1c`  ao  ![#ff5656](https://placehold.it/15/ff5656/000000?text=+) `#ff5656` 60% alfa;
 * Tamanho da foto principal no mobile: 294 x 350;
 * Tamanho da foto principal no desktop: 700 x 460;
 * Tamanho da foto do card de lista no mobile: 145 x 174;
