@@ -4,6 +4,11 @@ Esse é um repositório com as regras para criação do projeto para vaga de des
 
 A vaga está aberta e é **para trabalho presencial no Viva Decora, localizado em São Paulo no bairro da Consolação.**
 
+
+> &gt; [Compartilhe essa vaga no facebook.](https://www.facebook.com/sharer/sharer.php?u=https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork)
+
+> &gt; [Compartilhe essa vaga no linkedin.](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork&title=Vaga%20Desenvolvedor%20Front%20End%20Viva%20Decora)
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/master/screenshots-readme/screenshot-desktop-inicial.png?raw=true">
 </p>
