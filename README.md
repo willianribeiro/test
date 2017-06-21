@@ -21,6 +21,7 @@ A vaga está aberta e é **para trabalho presencial no Viva Decora, localizado e
 
 ## Tabela de conteúdos
 
+* [Instruções para entrega do projeto](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#warning-instruções-para-entrega-do-projeto)
 * [Sobre o Viva Decora](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#sobre-o-viva-decora)
 * [Sobre o projeto: Curadoria de filmes.](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#sobre-o-projeto-curadoria-de-filmes)
 * [Curadoria de filmes. Requisitos do MVP.](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#curadoria-de-filmes-requisitos-do-mvp)
@@ -28,7 +29,15 @@ A vaga está aberta e é **para trabalho presencial no Viva Decora, localizado e
 * [Implementação inicial opcional](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#implementação-inicial-opcional)
 * [Critérios de avaliação](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#critérios-de-avaliação)
 * [Pontos extras](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#pontos-extras)
-* [Instruções para entrega do projeto](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#warning-instruções-para-entrega-do-projeto)
+
+## :warning: Instruções para entrega do projeto 
+
+* Desenvolva e versione esse projeto usando git.
+* Utilize o serviço de hospedagem de código de sua preferência: github, bitbucket, gitlab ou outro.
+* **Não faça um fork desse projeto.** Projetos forkeados sofrerão penalização na classificação.
+* Crie um README com instruções claras sobre como executar seu projeto.
+* Envie um email com o link para seu código para "jose.maciel [arroba] vivadecora.com.br "
+* Dúvidas sobre esse projeto podem ser perguntadas nas [issues](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/issues)
 
 ## Sobre o Viva Decora:
 
@@ -161,12 +170,3 @@ As telas do filmes estão no Marvel. Você pode verifica-las nos seguintes links
 * Padronização do código: seguir algum styleguide de Javascript e/ou CSS;
 * Aplicação de alguma forma de dados estruturados ao HTML;
 * Aplicação das animações de transição.
-
-## :warning: Instruções para entrega do projeto 
-
-* Desenvolva e versione esse projeto usando git.
-* Utilize o serviço de hospedagem de código de sua preferência: github, bitbucket, gitlab ou outro.
-* **Não faça um fork desse projeto.** Projetos forkeados sofrerão penalização na classificação.
-* Crie um README com instruções claras sobre como executar seu projeto.
-* Envie um email com o link para seu código para "jose.maciel [arroba] vivadecora.com.br "
-* Dúvidas sobre esse projeto podem ser perguntadas nas [issues](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/issues)
