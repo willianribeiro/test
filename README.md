@@ -1,4 +1,10 @@
-# Projeto vaga Front-end no Viva Decora
+# Curadoria de filmes. 
+
+## Projeto de teste para vaga de desenvolvedor front-end no Viva Decora.
+
+> :warning: **Importante**: o processo de análise de novos testes pode ser encerrado sem aviso prévio. Para garantir sua participação nesse processo seletivo o primeiro passo é [enviar seu currículo pelo Lever](https://jobs.lever.co/vivareal/33e96820-2426-4568-852d-da36839a0c3c).
+
+<a href="https://jobs.lever.co/vivareal/33e96820-2426-4568-852d-da36839a0c3c" align="left"><img src="https://placeholdit.imgix.net/~text?txtsize=20&txtclr=fff&bg=ff5656&txt=Enviar+curr%C3%ADculo&w=250&h=60" align="left"></a>
 
 <a align="left" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork"><img src="https://placeholdit.imgix.net/~text?txtsize=20&txtclr=fff&bg=3b5998&txt=Compartilhar+no+Facebook&w=250&h=60" align="left"></a>
 
@@ -19,7 +25,7 @@ A vaga está aberta e é **para trabalho presencial no Viva Decora, localizado e
 * [Sobre o projeto: Curadoria de filmes.](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#sobre-o-projeto-curadoria-de-filmes)
 * [Curadoria de filmes. Requisitos do MVP.](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#curadoria-de-filmes-requisitos-do-mvp)
 * [Design do projeto](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#design-do-projeto)
-* [Outros recursos](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#outros-recursos)
+* [Implementação inicial opcional](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#implementação-inicial-opcional)
 * [Critérios de avaliação](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#critérios-de-avaliação)
 * [Pontos extras](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#pontos-extras)
 * [Instruções para entrega do projeto](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork#warning-instruções-para-entrega-do-projeto)
@@ -102,18 +108,22 @@ Todos acharam uma boa ideia. Os requisitos do MVP do projeto "Curadoria de filme
 
 As telas do filmes estão no Marvel. Você pode verifica-las nos seguintes links:
 
-* [Mobile - Filmes não curados](https://marvelapp.com/255gaff/screen/29558499)
-* [Mobile - Modal de sinopse](https://marvelapp.com/255gaff/screen/29558496)
-* [Mobile - Menu aberto](https://marvelapp.com/255gaff/screen/29558498)
-* [Mobile - Filmes curtidos](https://marvelapp.com/255gaff/screen/29558497)
-* [Mobile - Filmes não curtidos](https://marvelapp.com/255gaff/screen/29558501)
 
-* [Desktop - Filmes não curados](https://marvelapp.com/4abc9c6/screen/29557679)
-* [Desktop - Filmes curtidos. Estado vazio](https://marvelapp.com/4abc9c6/screen/29557683)
-* [Desktop - Filmes não curtidos. Estado vazio](https://marvelapp.com/4abc9c6/screen/29557685)
-* [Desktop - Filmes curtidos](https://marvelapp.com/4abc9c6/screen/29557681)
-* [Desktop - Filmes não curtidos](https://marvelapp.com/4abc9c6/screen/29557684)
-* [Desktop - Modal de sinopse](https://marvelapp.com/4abc9c6/screen/29557680)
+### Mobile
+* [Filmes não curados](https://marvelapp.com/255gaff/screen/29558499)
+* [Modal de sinopse](https://marvelapp.com/255gaff/screen/29558496)
+* [Menu aberto](https://marvelapp.com/255gaff/screen/29558498)
+* [Filmes curtidos](https://marvelapp.com/255gaff/screen/29558497)
+* [Filmes não curtidos](https://marvelapp.com/255gaff/screen/29558501)
+
+### Desktop 
+
+* [Filmes não curados](https://marvelapp.com/4abc9c6/screen/29557679)
+* [Filmes curtidos. Estado vazio](https://marvelapp.com/4abc9c6/screen/29557683)
+* [Filmes não curtidos. Estado vazio](https://marvelapp.com/4abc9c6/screen/29557685)
+* [Filmes curtidos](https://marvelapp.com/4abc9c6/screen/29557681)
+* [Filmes não curtidos](https://marvelapp.com/4abc9c6/screen/29557684)
+* [Modal de sinopse](https://marvelapp.com/4abc9c6/screen/29557680)
 
 ### Especificações de design
 
@@ -129,11 +139,11 @@ As telas do filmes estão no Marvel. Você pode verifica-las nos seguintes links
 
 [Confira aqui no repositório os assets desse projeto](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/tree/master/assets)
 
-## Outros recursos
+## Implementação inicial opcional
 
 * O desenvolvedor [@teles](https://github.com/teles) [começou parte do projeto nesse repositório e se quiser você pode continuar seu projeto a partir desse código](https://github.com/vivadecora/projeto-vaga-front-end-nao-fazer-fork/tree/master/curadoria). 
 
-**IMPORTANTE**: Usar qualquer desses recursos não é imprescindível e não vale pontos extras.
+**IMPORTANTE**: Usar a implementação desses recursos não é imprescindível e não vale pontos extras.
 
 ## Critérios de avaliação
 
@@ -146,11 +156,11 @@ As telas do filmes estão no Marvel. Você pode verifica-las nos seguintes links
 
 ## Pontos extras
 
-* Por desenvolvimento de testes unitários no Javascript;
-* Por uso de mock de chamadas Ajax nos testes unitários;
-* Por padronização do código: seguir algum styleguide de Javascript e/ou CSS;
-* Por aplicar alguma forma de dados estruturado ao HTML;
-* Pela aplicação das animações de transição.
+* Desenvolvimento de testes unitários no Javascript;
+* Uso de mock de chamadas Ajax nos testes unitários;
+* Padronização do código: seguir algum styleguide de Javascript e/ou CSS;
+* Aplicação de alguma forma de dados estruturados ao HTML;
+* Aplicação das animações de transição.
 
 ## :warning: Instruções para entrega do projeto 
 
