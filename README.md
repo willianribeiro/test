@@ -1,6 +1,6 @@
-# Curadoria de filmes. 
+# Curadoria de filmes
 
-## Projeto de teste para vaga de desenvolvedor front-end no Viva Decora.
+## Projeto de teste para vaga de desenvolvedor front-end no Viva Decora
 
 > :warning: **Importante**: o processo de análise de novos testes pode ser encerrado sem aviso prévio. Para garantir sua participação nesse processo seletivo o primeiro passo é [enviar seu currículo pelo Lever](https://jobs.lever.co/vivareal/33e96820-2426-4568-852d-da36839a0c3c).
 
