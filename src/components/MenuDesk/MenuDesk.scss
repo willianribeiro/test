@@ -1,0 +1,40 @@
+// COMPONENT: MENU DESKTOP
+.c-menu-desk {
+    flex-basis: 60px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $SPACING-1 0;
+    background-color: $COLOR_PRIMARY;
+
+    .c-menu-desk__item {
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 0 $SPACING-1;
+        position: relative;
+        color: $COLOR_WHITE;
+        font-size: .8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.5;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover::after {
+            content: '';
+            position: absolute;
+            left: $SPACING-2;
+            right: $SPACING-2;
+            bottom: -8px;
+            height: 4px;
+            background-color: $COLOR-WHITE;
+        }
+    }
+
+    @media screen and (max-width: 319px) {
+        display: none;
+    }
+}
