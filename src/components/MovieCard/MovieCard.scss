@@ -1,0 +1,55 @@
+// COMPONENT: MOVIE CARD
+.c-movie-card {
+    flex-basis: 145px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 175px;
+    max-width: 145px;
+    margin-bottom: $SPACING-1;
+    margin-right: $SPACING-1;
+    position: relative;
+    border-radius: 3px;
+    background-color: #222;
+    overflow: hidden;
+    text-align: center;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '';
+        border-radiuw: 3px;
+        background: linear-gradient(to bottom,
+            rgba(255,255,255, .1) 0%,
+            rgba(246,246,246, .3) 47%,
+            rgba(237,237,237, .5) 100%
+        );
+    }
+
+    > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .c-movie-card__footer {
+
+    }
+
+    .c-movie-card__title {
+
+    }
+}
+
+.l-movie-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: $SPACING-1;
+    max-height: calc(100% - #{$SIZE-CONTENT-HEADER-HEIGHT});
+    overflow-y: auto;
+
+    @media screen and (min-width: 320px) {
+
+    }
+}
