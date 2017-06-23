@@ -1,0 +1,25 @@
+// COMPONENT: MENU
+.c-menu {
+    width: 100%;
+
+    .c-menu__item {
+        padding: $SPACING-2;
+        color: $COLOR_WHITE;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        white-space: nowrap;
+        cursor: pointer;
+        user-select: none;
+
+        // STATES
+        &:hover {
+            background-color: darken($COLOR-BG-MENU, 10%);
+        }
+    }
+
+    // RESPONSIVENESS
+    @media screen and (min-width: 320px) {
+        display: none;
+    }
+}
