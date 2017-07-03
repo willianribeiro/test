@@ -1,10 +1,10 @@
 // CORE
 @import
-    'variables',
-    'mixins',
-    'reset',
-    'helpers',
-    'base';
+    'core/variables',
+    'core/mixins',
+    'core/reset',
+    'core/helpers',
+    'core/base';
 
 // COMPONENTS
 @import '../components/index';
