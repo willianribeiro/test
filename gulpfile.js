@@ -25,7 +25,7 @@ gulp.task('sass', function() {
 });
 
 
-// Rerun lint and jest tasks after changes on JavaScript files
+// Run sass and webserver tasks and watch for changes in .scss files.
 // Docs: https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpwatchglob-opts-cb
 gulp.task('watch', ['sass', 'webserver'], function() {
   gulp.watch(paths.allSCSS, ['sass']);
