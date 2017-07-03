@@ -9,6 +9,7 @@ var webserver = require('gulp-webserver');
 // File's paths
 var paths = {
   mainSCSS: 'src/sass/main.scss',
+  allSCSS: 'src/**/*.scss'
 }
 
 
@@ -27,7 +28,7 @@ gulp.task('sass', function() {
 // Rerun lint and jest tasks after changes on JavaScript files
 // Docs: https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpwatchglob-opts-cb
 gulp.task('watch', ['sass', 'webserver'], function() {
-  gulp.watch(paths.mainSCSS, ['sass']);
+  gulp.watch(paths.allSCSS, ['sass']);
 });
 
 
