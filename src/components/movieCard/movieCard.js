@@ -1,3 +1,5 @@
+/*eslint angular/function-type: [2,"named"]*/
+
 (function() {
   'use strict';
 
