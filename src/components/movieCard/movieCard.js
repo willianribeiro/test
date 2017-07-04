@@ -9,10 +9,10 @@
       return {
         restrict: 'E',
         replace: true,
-        templateUrl   : '/src/components/MovieCard/MovieCard.html',
+        templateUrl   : '/src/components/movieCard/movieCard.html',
         scope: {},
         controller: function ($scope, $element, $attrs) {
-          console.log('It works! (MovieCard)');
+          console.log('It works! (movieCard)');
         }
       };
     }
