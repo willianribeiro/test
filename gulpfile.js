@@ -5,6 +5,8 @@ var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var webserver = require('gulp-webserver');
 var eslint = require('gulp-eslint');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 
 // File's paths
@@ -28,12 +30,26 @@ gulp.task('sass', function() {
 
 
 // Lint JavaScript files.
-// docs: https://github.com/adametry/gulp-eslint#usage
+// Docs: https://github.com/adametry/gulp-eslint#usage
 gulp.task('eslint', function() {
   return gulp.src(paths.allJavaScript)
-  .pipe(eslint())
-  .pipe(eslint.format())
-  .pipe(eslint.failAfterError());
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
+});
+
+// Concat and uglify all JavaScript in 2 files: bundle.js and bundle.min.js
+// Docs:
+// https://github.com/contra/gulp-concat#usage
+// https://github.com/hparra/gulp-rename#usage
+// https://github.com/terinjokes/gulp-uglify#usage
+gulp.task('buildJavaScript', function() {
+  return gulp.src(paths.allJavaScript)
+    .pipe(concat('bundle.js'))
+    .pipe(gulp.dest('build'))
+    .pipe(rename('bundle.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('build'));
 });
 
 
