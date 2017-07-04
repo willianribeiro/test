@@ -9,7 +9,7 @@
       return {
         restrict: 'E',
         replace: true,
-        templateUrl   : '/src/components/MenuDesk/MenuDesk.html',
+        templateUrl   : '/src/components/menuDesk/menuDesk.html',
         scope: {},
         controller: function ($scope, $element, $attrs) {
           console.log('It works! (menuDesk)');
