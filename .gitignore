@@ -1,1 +1,3 @@
 node_modules
+src/sass/main.css
+src/sass/main.min.css
