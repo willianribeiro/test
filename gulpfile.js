@@ -39,8 +39,9 @@ gulp.task('eslint', function() {
 
 // Run sass and webserver tasks and watch for changes in .scss files.
 // Docs: https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpwatchglob-opts-cb
-gulp.task('watch', ['sass', 'webserver'], function() {
+gulp.task('watch', ['sass', 'eslint','webserver'], function() {
   gulp.watch(paths.allSCSS, ['sass']);
+  gulp.watch(paths.allJavaScript, ['eslint']);
 });
 
 
