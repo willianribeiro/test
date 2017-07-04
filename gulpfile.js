@@ -7,6 +7,7 @@ var webserver = require('gulp-webserver');
 var eslint = require('gulp-eslint');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var templateCache = require('gulp-angular-templatecache');
 
 
 // File's paths
@@ -38,6 +39,7 @@ gulp.task('eslint', function() {
     .pipe(eslint.failAfterError());
 });
 
+
 // Concat and uglify all JavaScript in 2 files: bundle.js and bundle.min.js
 // Docs:
 // https://github.com/contra/gulp-concat#usage
@@ -49,6 +51,13 @@ gulp.task('buildJavaScript', function() {
     .pipe(gulp.dest('build'))
     .pipe(rename('bundle.min.js'))
     .pipe(uglify())
+    .pipe(gulp.dest('build'));
+});
+
+
+gulp.task('template', function () {
+  return gulp.src('src/**/*.html')
+    .pipe(templateCache('templates.js', { module: 'app' }))
     .pipe(gulp.dest('build'));
 });
 

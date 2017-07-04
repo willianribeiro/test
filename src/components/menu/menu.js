@@ -7,11 +7,12 @@
     .module('app.components')
     .directive('menu', menu);
 
-  function menu() {
+  function menu($templateCache) {
     return {
       restrict: 'E',
       replace: true,
-      templateUrl   : '/src/components/menu/menu.html',
+      // templateUrl   : '/src/components/menu/menu.html',
+      templateUrl : $templateCache.get("menu.html"),
       scope: {},
       controller: function ($scope, $element, $attrs) {
         console.log('It works! (menu)');
