@@ -1,1 +1,3 @@
-extends: plugin:angular/johnpapa
+{
+    "extends": "plugin:angular/johnpapa"
+}
