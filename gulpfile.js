@@ -35,7 +35,7 @@ gulp.task('watch', ['sass', 'webserver'], function() {
 // Serve application locally
 // Docs: https://github.com/schickling/gulp-webserver#usage
 gulp.task('webserver', function() {
-  gulp.src('./src')
+  gulp.src('.')
     .pipe(webserver({
       livereload: true,
       open: true,

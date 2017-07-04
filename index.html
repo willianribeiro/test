@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="app">
 <head>
-    <title>Curadoria de filmes</title>
+    <!-- META TAGS -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curadoria de filmes</title>
+
+    <!-- CSS IMPORTS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="sass/main.min.css">
+    <link rel="stylesheet" href="src/sass/main.min.css">
 </head>
 <body>
     <div class="app-root">
-        <aside class="app-menu is-closed" id="js-app-menu">
-            <nav class="c-menu">
-                <div class="c-menu__item">filmes não curados</div>
-                <div class="c-menu__item">filmes curtidos</div>
-                <div class="c-menu__item">filmes não curtidos</div>
-            </nav>
-        </aside>
-
+        <menu></menu>
         <main class="app-main">
             <header class="app-header">
                 <div class="app-header__btn" onclick="toggleMenu()">
@@ -55,5 +51,14 @@
             </section>
         </main>
     </div>
+
+
+    <!-- JAVASCRIPT IMPORTS  -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="src/index.js"></script>
+    <script src="src/components/index.js"></script>
+    <script src="src/modules/index.js"></script>
+    <script src="src/components/Menu/Menu.js"></script>
+
 </body>
 </html>

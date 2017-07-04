@@ -4,6 +4,7 @@
   "description": "A pratical test for job interview in Viva Decora",
   "main": "index.js",
   "dependencies": {
+    "angular": "^1.6.5",
     "gulp": "^3.9.1"
   },
   "devDependencies": {
