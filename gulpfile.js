@@ -100,6 +100,13 @@ gulp.task('buildIndexHTML', function() {
 });
 
 
+gulp.task('buildVendors', function() {
+  return gulp.src('node_modules/angular/angular.min.js')
+    .pipe(rename('vendors.js'))
+    .pipe(gulp.dest('build'));
+});
+
+
 // Run "sass", "eslint" and "webserver" tasks and watch for changes in .scss and .js files.
 // Docs: https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpwatchglob-opts-cb
 gulp.task('watch', ['sass', 'eslint','webserver'], function() {
