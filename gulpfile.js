@@ -27,10 +27,7 @@ var paths = {
 gulp.task('sass', function() {
   return gulp.src(paths.mainSCSS)
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./src/sass'))
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(rename('main.min.css'))
-    .pipe(gulp.dest('./src/sass'))
+    .pipe(gulp.dest('./src/sass'));
 });
 
 
