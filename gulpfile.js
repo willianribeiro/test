@@ -79,16 +79,13 @@ gulp.task('build:templates', function() {
 });
 
 
-// Concat generated temp files ("app.js" and "templates.js") in a single "bundle.js".
+// Concat generated temp files ("app.js" and "templates.js") in a single "bundle.min.js".
 // Docs:
 // https://github.com/contra/gulp-concat#usage
-// https://github.com/hparra/gulp-rename#usage
 // https://github.com/terinjokes/gulp-uglify#usage
 gulp.task('build:concat', function() {
   return gulp.src(paths.tempFiles)
-    .pipe(concat('bundle.js'))
-    .pipe(gulp.dest(paths.build))
-    .pipe(rename('bundle.min.js'))
+    .pipe(concat('bundle.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest(paths.build))
 });
