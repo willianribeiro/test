@@ -10,7 +10,7 @@ var uglify = require('gulp-uglify');
 var templateCache = require('gulp-angular-templatecache');
 
 
-// File's paths
+// File's paths.
 var paths = {
   mainSCSS: 'src/sass/main.scss',
   allSCSS: 'src/**/*.scss',
@@ -40,7 +40,7 @@ gulp.task('eslint', function() {
 });
 
 
-// Concat and uglify all JavaScript in 2 files: bundle.js and bundle.min.js
+// Concat and uglify all JavaScript in 2 files: bundle.js and bundle.min.js.
 // Docs:
 // https://github.com/contra/gulp-concat#usage
 // https://github.com/hparra/gulp-rename#usage
@@ -55,9 +55,14 @@ gulp.task('buildJavaScript', function() {
 });
 
 
-gulp.task('template', function () {
+// Put all HTML templates in a single JavaScript file.
+// Docs: https://github.com/miickel/gulp-angular-templatecache#example
+gulp.task('buildTemplates', function () {
   return gulp.src('src/**/*.html')
-    .pipe(templateCache('templates.js', { module: 'app' }))
+    .pipe(templateCache('templates.js', {
+      module: 'app',
+      root: '/src'
+    }))
     .pipe(gulp.dest('build'));
 });
 
@@ -70,7 +75,7 @@ gulp.task('watch', ['sass', 'eslint','webserver'], function() {
 });
 
 
-// Serve application locally
+// Serve application locally.
 // Docs: https://github.com/schickling/gulp-webserver#usage
 gulp.task('webserver', function() {
   return gulp.src('.')
