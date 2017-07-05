@@ -85,7 +85,7 @@ gulp.task('build', function() {
     return del(['build/app.js', 'build/templates.js']);
   }
 
-  return runSequence('buildJavaScript', 'buildTemplates', 'concatJavaScript', deleteTempFiles);
+  return runSequence('buildJavaScript', 'buildTemplates', 'concatJavaScript', 'buildVendors', 'buildIndexHTML', 'buildSass', deleteTempFiles);
 });
 
 
