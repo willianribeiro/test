@@ -43,7 +43,7 @@ gulp.task('eslint', function() {
 
 // Concat and uglify all JavaScript in 2 files: app.js and app.min.js.
 // Docs: https://github.com/contra/gulp-concat#usage
-gulp.task('buildJavaScript', function() {
+gulp.task('build:javascript', function() {
   return gulp.src(paths.allJavaScript)
     .pipe(concat('app.js'))
     .pipe(gulp.dest('build'));
@@ -52,7 +52,7 @@ gulp.task('buildJavaScript', function() {
 
 // Put all HTML templates in a single JavaScript file.
 // Docs: https://github.com/miickel/gulp-angular-templatecache#example
-gulp.task('buildTemplates', function() {
+gulp.task('build:templates', function() {
   return gulp.src(paths.allTemplates)
     .pipe(templateCache('templates.js', {
       module: 'app',
@@ -67,7 +67,7 @@ gulp.task('buildTemplates', function() {
 // https://github.com/contra/gulp-concat#usage
 // https://github.com/hparra/gulp-rename#usage
 // https://github.com/terinjokes/gulp-uglify#usage
-gulp.task('concatJavaScript', function() {
+gulp.task('build:concat', function() {
   return gulp.src(['build/app.js', 'build/templates.js'])
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('build'))
@@ -82,11 +82,11 @@ gulp.task('build', function() {
     return del(['build/app.js', 'build/templates.js']);
   }
 
-  return runSequence('buildJavaScript', 'buildTemplates', 'concatJavaScript', 'buildVendors', 'buildIndexHTML', 'buildSass', deleteTempFiles);
+  return runSequence('build:javascript', 'build:templates', 'build:concat', 'build:vendors', 'build:index', 'build:sass', deleteTempFiles);
 });
 
 
-gulp.task('buildSass', function() {
+gulp.task('build:sass', function() {
   return gulp.src(paths.mainSCSS)
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename('styles.min.css'))
@@ -94,7 +94,7 @@ gulp.task('buildSass', function() {
 });
 
 
-gulp.task('buildIndexHTML', function() {
+gulp.task('build:index', function() {
   return gulp.src('index.html')
     .pipe(htmlreplace({
         'css': 'styles.min.css',
@@ -104,7 +104,7 @@ gulp.task('buildIndexHTML', function() {
 });
 
 
-gulp.task('buildVendors', function() {
+gulp.task('build:vendors', function() {
   return gulp.src('node_modules/angular/angular.min.js')
     .pipe(rename('vendors.min.js'))
     .pipe(gulp.dest('build'));
