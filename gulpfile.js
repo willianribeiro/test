@@ -100,7 +100,7 @@ gulp.task('buildSass', function() {
 gulp.task('buildIndexHTML', function() {
   return gulp.src('index.html')
     .pipe(htmlreplace({
-        'css': 'main.min.css',
+        'css': 'styles.min.css',
         'js': ['vendors.min.js', 'bundle.min.js']
     }))
     .pipe(gulp.dest('build'));
@@ -109,7 +109,7 @@ gulp.task('buildIndexHTML', function() {
 
 gulp.task('buildVendors', function() {
   return gulp.src('node_modules/angular/angular.min.js')
-    .pipe(rename('vendors.js'))
+    .pipe(rename('vendors.min.js'))
     .pipe(gulp.dest('build'));
 });
 
