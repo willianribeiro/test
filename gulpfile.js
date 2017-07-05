@@ -8,6 +8,8 @@ var eslint = require('gulp-eslint');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var templateCache = require('gulp-angular-templatecache');
+var runSequence = require('run-sequence');
+var del = require('del');
 
 
 // File's paths.
@@ -15,6 +17,7 @@ var paths = {
   mainSCSS: 'src/sass/main.scss',
   allSCSS: 'src/**/*.scss',
   allJavaScript: 'src/**/*.js',
+  allTemplates: 'src/**/*.html',
 }
 
 
@@ -40,30 +43,48 @@ gulp.task('eslint', function() {
 });
 
 
-// Concat and uglify all JavaScript in 2 files: bundle.js and bundle.min.js.
-// Docs:
-// https://github.com/contra/gulp-concat#usage
-// https://github.com/hparra/gulp-rename#usage
-// https://github.com/terinjokes/gulp-uglify#usage
+// Concat and uglify all JavaScript in 2 files: app.js and app.min.js.
+// Docs: https://github.com/contra/gulp-concat#usage
 gulp.task('buildJavaScript', function() {
   return gulp.src(paths.allJavaScript)
-    .pipe(concat('bundle.js'))
-    .pipe(gulp.dest('build'))
-    .pipe(rename('bundle.min.js'))
-    .pipe(uglify())
+    .pipe(concat('app.js'))
     .pipe(gulp.dest('build'));
 });
 
 
 // Put all HTML templates in a single JavaScript file.
 // Docs: https://github.com/miickel/gulp-angular-templatecache#example
-gulp.task('buildTemplates', function () {
-  return gulp.src('src/**/*.html')
+gulp.task('buildTemplates', function() {
+  return gulp.src(paths.allTemplates)
     .pipe(templateCache('templates.js', {
       module: 'app',
       root: '/src'
     }))
     .pipe(gulp.dest('build'));
+});
+
+
+// Concat generated temp files ("app.js" and "templates.js") in a single "bundle.js".
+// Docs:
+// https://github.com/contra/gulp-concat#usage
+// https://github.com/hparra/gulp-rename#usage
+// https://github.com/terinjokes/gulp-uglify#usage
+gulp.task('concatJavaScript', function() {
+  return gulp.src(['build/app.js', 'build/templates.js'])
+    .pipe(concat('bundle.js'))
+    .pipe(gulp.dest('build'))
+    .pipe(rename('bundle.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('build'))
+});
+
+
+gulp.task('build', function() {
+  function deleteTempFiles() {
+    return del(['build/app.js', 'build/templates.js']);
+  }
+
+  return runSequence('buildJavaScript', 'buildTemplates', 'concatJavaScript', deleteTempFiles);
 });
 
 
