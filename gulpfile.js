@@ -10,6 +10,7 @@ var uglify = require('gulp-uglify');
 var templateCache = require('gulp-angular-templatecache');
 var runSequence = require('run-sequence');
 var del = require('del');
+var htmlreplace = require('gulp-html-replace');
 
 
 // File's paths.
@@ -85,6 +86,17 @@ gulp.task('build', function() {
   }
 
   return runSequence('buildJavaScript', 'buildTemplates', 'concatJavaScript', deleteTempFiles);
+});
+
+
+
+gulp.task('buildIndexHTML', function() {
+  return gulp.src('index.html')
+    .pipe(htmlreplace({
+        'css': 'main.min.css',
+        'js': ['vendors.min.js', 'bundle.min.js']
+    }))
+    .pipe(gulp.dest('build'));
 });
 
 
