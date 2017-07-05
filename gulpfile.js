@@ -41,6 +41,23 @@ gulp.task('eslint', function() {
 });
 
 
+gulp.task('build', function() {
+  function deleteTempFiles() {
+    return del(['build/app.js', 'build/templates.js']);
+  }
+
+  return runSequence(
+    'build:javascript',
+    'build:templates',
+    'build:concat',
+    'build:vendors',
+    'build:css',
+    'build:index',
+    deleteTempFiles
+  );
+});
+
+
 // Concat and uglify all JavaScript in 2 files: app.js and app.min.js.
 // Docs: https://github.com/contra/gulp-concat#usage
 gulp.task('build:javascript', function() {
@@ -77,16 +94,14 @@ gulp.task('build:concat', function() {
 });
 
 
-gulp.task('build', function() {
-  function deleteTempFiles() {
-    return del(['build/app.js', 'build/templates.js']);
-  }
-
-  return runSequence('build:javascript', 'build:templates', 'build:concat', 'build:vendors', 'build:index', 'build:sass', deleteTempFiles);
+gulp.task('build:vendors', function() {
+  return gulp.src('node_modules/angular/angular.min.js')
+    .pipe(rename('vendors.min.js'))
+    .pipe(gulp.dest('build'));
 });
 
 
-gulp.task('build:sass', function() {
+gulp.task('build:css', function() {
   return gulp.src(paths.mainSCSS)
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename('styles.min.css'))
@@ -100,13 +115,6 @@ gulp.task('build:index', function() {
         'css': 'styles.min.css',
         'js': ['vendors.min.js', 'bundle.min.js']
     }))
-    .pipe(gulp.dest('build'));
-});
-
-
-gulp.task('build:vendors', function() {
-  return gulp.src('node_modules/angular/angular.min.js')
-    .pipe(rename('vendors.min.js'))
     .pipe(gulp.dest('build'));
 });
 
