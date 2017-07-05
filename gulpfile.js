@@ -89,6 +89,13 @@ gulp.task('build', function() {
 });
 
 
+gulp.task('buildSass', function() {
+  return gulp.src(paths.mainSCSS)
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(rename('styles.min.css'))
+    .pipe(gulp.dest('build'))
+});
+
 
 gulp.task('buildIndexHTML', function() {
   return gulp.src('index.html')
