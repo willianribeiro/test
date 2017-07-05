@@ -19,6 +19,10 @@ var paths = {
   allSCSS: 'src/**/*.scss',
   allJavaScript: 'src/**/*.js',
   allTemplates: 'src/**/*.html',
+  build: 'build',
+  angular: 'node_modules/angular/angular.min.js',
+  tempFiles: ['build/app.js', 'build/templates.js'],
+  srcRoot: '/src',
 }
 
 
@@ -59,7 +63,7 @@ gulp.task('build', function() {
 gulp.task('build:javascript', function() {
   return gulp.src(paths.allJavaScript)
     .pipe(concat('app.js'))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest(paths.build));
 });
 
 
@@ -69,9 +73,9 @@ gulp.task('build:templates', function() {
   return gulp.src(paths.allTemplates)
     .pipe(templateCache('templates.js', {
       module: 'app',
-      root: '/src'
+      root: paths.srcRoot,
     }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest(paths.build));
 });
 
 
@@ -81,19 +85,19 @@ gulp.task('build:templates', function() {
 // https://github.com/hparra/gulp-rename#usage
 // https://github.com/terinjokes/gulp-uglify#usage
 gulp.task('build:concat', function() {
-  return gulp.src(['build/app.js', 'build/templates.js'])
+  return gulp.src(paths.tempFiles)
     .pipe(concat('bundle.js'))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest(paths.build))
     .pipe(rename('bundle.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest(paths.build))
 });
 
 
 gulp.task('build:vendors', function() {
-  return gulp.src('node_modules/angular/angular.min.js')
+  return gulp.src(paths.angular)
     .pipe(rename('vendors.min.js'))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest(paths.build));
 });
 
 
@@ -101,7 +105,7 @@ gulp.task('build:css', function() {
   return gulp.src(paths.mainSCSS)
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename('styles.min.css'))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest(paths.build))
 });
 
 
@@ -111,12 +115,12 @@ gulp.task('build:index', function() {
         'css': 'styles.min.css',
         'js': ['vendors.min.js', 'bundle.min.js']
     }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest(paths.build));
 });
 
 
 gulp.task('build:clean', function() {
-  return del(['build/app.js', 'build/templates.js']);
+  return del(paths.tempFiles);
 });
 
 
