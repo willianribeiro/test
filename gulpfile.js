@@ -42,10 +42,6 @@ gulp.task('eslint', function() {
 
 
 gulp.task('build', function() {
-  function deleteTempFiles() {
-    return del(['build/app.js', 'build/templates.js']);
-  }
-
   return runSequence(
     'build:javascript',
     'build:templates',
@@ -53,7 +49,7 @@ gulp.task('build', function() {
     'build:vendors',
     'build:css',
     'build:index',
-    deleteTempFiles
+    'build:clean'
   );
 });
 
@@ -116,6 +112,11 @@ gulp.task('build:index', function() {
         'js': ['vendors.min.js', 'bundle.min.js']
     }))
     .pipe(gulp.dest('build'));
+});
+
+
+gulp.task('build:clean', function() {
+  return del(['build/app.js', 'build/templates.js']);
 });
 
 
